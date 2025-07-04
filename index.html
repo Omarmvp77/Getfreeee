@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>احصل على نسختك المجانية</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font: El Messiri -->
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <style>
+    body {
+      font-family: 'El Messiri', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#f8f9fa] text-gray-800">
+
+  <div class="max-w-3xl mx-auto px-4 py-10 space-y-10">
+    
+    <!-- العنوان الرئيسي -->
+    <div class="text-center">
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-relaxed text-[#1e293b]">
+        عرض خاص 🎁 <span class="text-yellow-500">للحصول على نسخة مجانية</span> من الكتاب الأكثر طلبًا
+      </h1>
+      <p class="mt-4 text-lg text-gray-600">من صفر إلى 30 ألف دولار — بدون أدوات مدفوعة</p>
+    </div>
+
+    <!-- دعوة للاختيار -->
+    <div class="text-center">
+      <p class="text-2xl font-bold text-[#1e293b]">اختر إحدى الطريقتين واحصل على الكتاب مجانًا</p>
+    </div>
+
+    <!-- الشرائط التفاعلية -->
+    <div class="space-y-6">
+      
+      <!-- طريقة 1 -->
+      <div class="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-xl overflow-hidden shadow">
+        <button onclick="toggle('panel1')" class="w-full flex justify-between items-center px-6 py-5 text-black font-bold">
+          <span><i class="fa-solid fa-user-plus me-2"></i> رشّح صديق يشتري الكتاب واحصل على نسخة مجانية ونسبة 50%</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div id="panel1" class="hidden bg-white text-gray-700 px-6 py-4 text-sm leading-loose">
+          بمجرد شراء صديقك للكتاب، أرسل لنا لقطة الشاشة الخاصة به، وسنرسل لك نسخة مجانية ونسبة 50٪ من سعر الكتاب.
+          <br>
+          <a href="https://t.me/+u263kBU0xUA5N2U0" target="_blank" class="text-blue-600 underline font-semibold">تفاصيل أكثر هنا</a>
+        </div>
+      </div>
+
+      <!-- طريقة 2 -->
+      <div class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl overflow-hidden shadow">
+        <button onclick="toggle('panel2')" class="w-full flex justify-between items-center px-6 py-5 text-white font-bold">
+          <span><i class="fa-brands fa-facebook-f me-2"></i> إنشاء 10 حسابات ونشر 1000 تعليق</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div id="panel2" class="hidden bg-white text-gray-700 px-6 py-4 space-y-2 text-sm">
+          <p>1. حمّل تطبيق <strong>Multi App</strong> لنسخ Facebook Lite</p>
+          <p>2. أنشئ 10 حسابات باستخدام Temp Mail</p>
+          <p>3.احفظ الايملات وكلمات السر لكل حساب</p>
+          <p>4. وزع التعليقات على مدار اليوم بحد أقصى 200 تعليق في اليوم</p>
+          <p>5. تواصل معنا بعد الانتهاء عبر <a href="https://wa.me/201017388913" target="_blank" class="text-blue-600 underline font-semibold">واتساب</a></p>
+        </div>
+      </div>
+
+      <!-- زر الانضمام للقناة -->
+      <a href="https://chat.whatsapp.com/" target="_blank" class="block bg-green-600 text-white font-bold text-center py-4 rounded-xl hover:bg-green-700 transition">
+        <i class="fa-brands fa-whatsapp me-2"></i> انضم لقناة واتساب: أول دولار أونلاين
+      </a>
+    </div>
+
+    <!-- زر CTA -->
+    <div class="text-center pt-10">
+      <a href="https://example.com" class="bg-yellow-400 text-black px-8 py-3 font-bold rounded-full text-lg hover:bg-yellow-300 transition duration-300 shadow-md">
+        احصل على نسختك الآن
+      </a>
+    </div>
+
+    <!-- فوتر -->
+    <footer class="mt-14 text-center text-sm text-gray-500">
+      © 2025 جميع الحقوق محفوظة — تصميم فريق عمر
+    </footer>
+  </div>
+
+  <!-- سكريبت التبديل -->
+  <script>
+    function toggle(id) {
+      document.getElementById(id).classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
